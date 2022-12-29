@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css_file.css">
+    <title>SAMEER</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("1xkgMI2bW-YS2Lf2W");
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="main" id="home">
+        <img class="home_image" id="home_image" src="static/home.jpg" alt="home image">
+    </div>
+    <div class="container-fluid menu-home ">
+        <div class="row">
+            <div class="col-3 d-block d-md-none" style="height:300px;">
+                <label for="toggel"
+                    style="font-size:30px ; text-align:center; color: white; position:fixed;z-index: 9999;">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <input style="display:none;" type="checkbox" id="toggel">
+                <div class="row flex-column list">
+                    <div class="col nav" style="background-color:lightgreen ;"><a href="#home">HOME</a>
+                    </div>
+                    <div class="col nav" style="background-color: yellow;"><a href="#project">PROJECTS</a>
+                    </div>
+                    <div class="col nav" style="background-color: pink;"><a href="#resume2">RESUME</a>
+                    </div>
+                    <div class="col nav" style="background-color: brown;"><a href="#abouteme">ABOUTE</a>
+                    </div>
+                    <div class="col nav" style="background-color: rgb(237, 192, 255);"><a href="#contactme">CONTACT</a>
+                    </div>
+                </div>
+            </div>
+            <!-- here apps icons -->
+            <div class="col-1 d-md-block d-none" style="background-color:rgba(192, 235, 255, 0.829) ;">
+                <div class="row flex-column">
+                    <div class="col">
+                        <img style="width:100% ; border-radius: 50px; height:40px; margin-top: 20px;"
+                            src="static/logo.png" alt="">
+                    </div>
+                    <div class="col" style=" padding-top:50px;">
+                        <p style="font-size:30px;text-align:center; "><a style="color:black"
+                                href="https://www.instagram.com/itssam.kha/"> <i
+                                    class="fa-brands fa-square-instagram"></i></a></p>
+                    </div>
+                    <div class="col" style=" padding-top:20px;">
+                        <p style="font-size:30px;text-align:center;"><a style="color:black"
+                                href="https://github.com/itssameerkhan"> <i class="fa-brands fa-github"></i></a></p>
+                    </div>
+                    <div class="col" style="padding-top:20px;">
+                        <p style="font-size:30px;text-align:center;"><a style="color:black"
+                                href="https://www.facebook.com/sameer1ssk1"> <i
+                                    class="fa-brands fa-square-facebook"></i></a></p>
+                    </div>
+                    <div class="col" style="padding-top: 20px;">
+                        <p style="font-size:30px;text-align:center;"><a style="color:black"
+                                href="https://www.linkedin.com/in/sameer-khan-514821178/"><i
+                                    class="fa-brands fa-linkedin"></i></a> </p>
+                    </div>
+                </div>
+            </div>
+            <!-- this is my name  -->
+            <div class="col" style="text-align:end;">
+                <p id="hi" style="font-family:'Courier New', Courier, monospace ; font-weight: bold;" class="hi">
+                    hello,I'm ...</p>
+                <p id="sameer" style="font-family:'Courier New', Courier, monospace ;" class="sameer">Sameer <span
+                        style="background-color:white ; color:black"> khaN</span></p>
+                <p id="resume" style="font-family:'Courier New', Courier, monospace ; font-weight: bold;"
+                    class="resume">AND THIS IS MY RESUME</p>
+            </div>
+
+            <!-- my image -->
+            <div class="col-3 d-md-block d-none " style="height:500px;">
+                <img style="width:80%; border-radius: 200px; border:5px inset silver;margin-top:100px;height:60%"
+                    src="static/photo123.jpg" alt="my image">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid d-md-block d-none" id="nav_bar">
+        <div class="row" style="padding-top:10px ;">
+            <div class="col " style="text-align:center;">-</div>
+            <div class="col nav_bar" style="background-color:lightgreen ;"><a href="#home"> HOME</a></div>
+            <div class="col nav_bar" style="background-color:yellow ;"><a href="#project"> PROJECTS</a></div>
+            <div class="col nav_bar" style="background-color:pink ;"><a href="#resume2"> RESUME</a></div>
+            <div class="col nav_bar" style="background-color:lightgoldenrodyellow ;"><a href="#abouteme"> ABOUTE</a>
+            </div>
+            <div class="col nav_bar" style="background-color:rgb(237, 192, 255) ;"><a href="#contactme"> CONTACT</a>
+            </div>
+            <div class="col " style="text-align:center;">-</div>
+        </div>
+    </div>
+
+    <!-- feature_projects -->
+    <div class="col" id="project">
+        <p class="feature"><span style="font-family:'Courier New', Courier, monospace ;">Featured</span> <span
+                style="background-color:black ;color:lightgoldenrodyellow">Projects</span></p>
+    </div>
+    <div class="container-fluid d-md-block d-none">
+        <div class="row ">
+            <div class="col" style="text-align:center;">-</div>
+            <div class="col" style=" font-weight:bold ; text-align: center;">
+                <p onclick="all_project()" style="cursor:pointer ; color:rgba(0, 0, 255, 0.644);">All</p>
+            </div>
+            <div class="col" style="font-weight:bold ; text-align:center;">
+                <p onclick="machine_learning_Project()" style="cursor:pointer; color:rgba(0, 0, 255, 0.651);">
+                    Machine-learning</p>
+            </div>
+            <div class="col" style="font-weight:bold ;text-align: center;">
+                <p onclick="github_project()" style="cursor:pointer; color:rgba(0, 0, 255, 0.637);">Github_project</p>
+            </div>
+            <div class="col" style="font-weight:bold ;text-align: center;">
+                <p onclick="other()" style="cursor:pointer; color:rgba(0, 0, 255, 0.644);">Others</p>
+            </div>
+            <div class="col" style="text-align:center;">-</div>
+        </div>
+    </div>
+    <div class="contianer">
+        <dv class="row justify-content-end ">
+
+            <div class="col-6 d-block d-md-none"
+                style="text-align:end; position:fixed;z-index:9999;margin-right: 30px;">
+                <div style="display:none;" id="second_menu">
+
+                    <p style="font-size:40px ; margin-right:-20px; color: black; "><i onclick="myFunction()"
+                            class="fa-solid fa-ellipsis-vertical"></i></p>
+                    <div class="row flex-column" id="same" style="display:none; margin-right: -40px;">
+                        <div class="col" style="background-color: lightgreen; font-weight:bold ; text-align: center;">
+                            <span onclick="all_project()" style="cursor:pointer ; color:blue"> All</span></div>
+                        <div class="col" style="font-weight:bold ;background-color: lightyellow; text-align:center;">
+                            <span onclick="machine_learning_Project()"
+                                style="cursor:pointer ; color:blue">Machine-learning</span></a></div>
+                        <div class="col" style="font-weight:bold ;background-color: lightsalmon;text-align: center;">
+                            <span onclick="github_project()"
+                                style="cursor:pointer ; color:blue">Github-project</span></a></div>
+                        <div class="col" style="font-weight:bold ;background-color: lightcoral;text-align: center;">
+                            <span onclick="other()" style="cursor:pointer ; color:blue">Other</span></a></div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </dv>
+    </div>
+    </div>
+    <div class="container-fluid " style="padding-top:35px ;">
+        <div class="row">
+            <div class="col  height:300px; overflow-auto">
+                <div class="row justify-content-around">
+                    <div class="col-4-md project " id="movie">
+                        <a href="templates/coming_soon.html"> <img class="feature_image_hover"
+                                style="border:5px inset silver;" src="static/movie_recomender.jpg" alt="movie"></a>
+                        <p style="text-align:center; font-family: 'Ubuntu', sans-serif;">Movie_recomender</p>
+                    </div>
+                    <div class="col-4-md project" id="human">
+                        <a href="templates/coming_soon.html"><img style="border:5px inset silver;"
+                                src="static/human-activity-recognition-s-742x455.jpeg" alt="human_Activity"></a>
+                        <p style="text-align:center;font-family: 'Ubuntu', sans-serif;">Human_Activity_recognizer</p>
+                    </div>
+                    <div class="col-4-md project" id="player">
+                        <a href="https://github.com/itssameerkhan/indian_player_name_prediction"><img
+                                style="border:5px inset silver;" src="static/virat.jpg" alt="player_prediction"></a>
+                        <p style="text-align:center;font-family: 'Ubuntu', sans-serif;">Player_prediction</p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-around">
+                    <div class="col-4-md project" id="irish_classification">
+                        <a href="https://github.com/itssameerkhan/keras_flower_prediction"><img
+                                style="border:5px inset silver;" src="static/irish_clasification.png"
+                                alt="flower prediction"></a>
+                        <p style="text-align:center;font-family: 'Ubuntu', sans-serif;">Flower_recognizer</p>
+                    </div>
+                    <div class="col-4-md project" id="titanic">
+                        <a href="templates/coming_soon.html"> <img style="border:5px inset silver;"
+                                src="static/titanic.jpg" alt="titanic life predictor"></a>
+                        <p style="text-align:center;font-family: 'Ubuntu', sans-serif;">Titanic_life_predictor</p>
+                    </div>
+                    <div class="col-4-md project" id="sale">
+                        <a href="templates/coming_soon.html"> <img style="border:5px inset silver;"
+                                src="static/sale_forcasting.png" alt="sale_forcasting"></a>
+                        <p style="text-align:center;font-family: 'Ubuntu', sans-serif;">sale_forcasting</p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-around">
+                    <div class="col-4-md project">
+                        <a href="templates/coming_soon.html" id="text_detection"><img style="border:5px inset silver;"
+                                src="static/Text_Detection_in_Images.jpg" alt="Text_Detection_in_Images"></a>
+                        <p style="text-align:center;font-family: 'Ubuntu', sans-serif;">Text_Detection_in_Images</p>
+                    </div>
+                    <div class="col-4-md project" id="number_prediction">
+                        <a href="https://github.com/itssameerkhan/number_prediction"><img
+                                style="border:5px inset silver;" src="static/number_prediction.png"
+                                alt="number prediction"></a>
+                        <p style="text-align:center;font-family: 'Ubuntu', sans-serif;">Number_prediction</p>
+                    </div>
+                    <div class="col-4-md project" id="keras_image_prediction">
+                        <a href="https://github.com/itssameerkhan/Cnn_image_prediction"> <img
+                                style="border:5px inset silver;" src="static/truck_image.png"
+                                alt="keras image prediction"></a>
+                        <p style="text-align:center;font-family: 'Ubuntu', sans-serif;">Keras_iamge_predictor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RESUME -->
+    <div class="col" id="resume2">
+        <p class="feature"><span style="font-family:'Courier New', Courier, monospace ;">..MY</span> <span
+                style="background-color:black ;color:lightgoldenrodyellow">Resume</span></p>
+    </div>
+    <div class="container-fluid" style="margin-top:-20px ;">
+        <p
+            style="font-family: 'Ubuntu', sans-serif;font-weight: bold; margin-left: 40px; font-size:23px ; margin-top:20px;">
+            Education</p>
+        <div class="row justify-content-around"
+            style="background-color:rgba(0, 139, 139, 0.349) ; padding-top: 20px; padding-bottom: 20px;">
+            <div class="col-md-5" style="background-color:rgba(0, 128, 96, 0.466);">
+                <p style="font-family: 'Ubuntu', sans-serif;"><i class="fa-sharp fa-solid fa-calendar-days"></i>
+                    2023-current. (Masters) </p>
+                <p style="font-family: 'Ubuntu', sans-serif; font-size:13px ; margin-top:-10px">INTERNATIONAL INSTITUTE
+                    OF TECHNOLOGY (BANGALORE)</p>
+                <p style="font-family: 'Ubuntu', sans-serif; font-size:13px ; margin-top:-10px">-Data Science</p>
+                <div style="margin-top:-20px; margin-left:5px;font-size:13px ;">
+                    <p>probability and statics, Business intelligence, programing languages, machine learning, Data
+                        visualization.</p>
+                </div>
+                <p style="font-family: 'Ubuntu', sans-serif; font-size:13px ; margin-top:-10px">-Data Analytics</p>
+                <div style="margin-top:-20px; margin-left:5px;font-size:13px ;">
+                    <p>Power Bi, Excell and python library.</p>
+                </div>
+            </div>
+            <div class="col-md-5" style="background-color:rgba(153, 205, 50, 0.623)">
+                <p style="font-family: 'Ubuntu', sans-serif;"><i class="fa-sharp fa-solid fa-calendar-days"></i>
+                    2019-2022. (Graduation) </p>
+                <p style="font-family: 'Ubuntu', sans-serif; font-size:13px ; margin-top:-10px">VEER BAHADUR SINGH
+                    PURVANCHAL UNIVERSITY</p>
+                <p style="font-family: 'Ubuntu', sans-serif; font-size:13px ; margin-top:-10px">-Bachelor of Arts</p>
+                <div style="margin-top:-20px; margin-left:5px;font-size:13px ;">
+                    <p>Geography, politics, Economics, psychology.</p>
+                </div>
+                <p style="font-family: 'Ubuntu', sans-serif;"><i class="fa-sharp fa-solid fa-calendar-days"></i> ...
+                    -2019. (Schooling) </p>
+                <p style="font-family: 'Ubuntu', sans-serif; font-size:13px ; margin-top:-10px">RS convent Sainik School
+                    (varanasi)</p>
+                <div style="margin-top:-20px; margin-left:5px;font-size:13px ;">
+                    <p>Mathmatics, physics, chemestry, English, Computer science.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="margin-top:10px ;">
+        <p
+            style="font-family: 'Ubuntu', sans-serif;font-weight: bold; margin-left: 40px; font-size:23px ; margin-top:20px;">
+            My Skills</p>
+        <div class="row justify-content-around"
+            style="background-color:rgba(0, 139, 139, 0.349) ; padding-top: 20px; padding-bottom: 20px;">
+            <div class="col-md-5" style="background-color:rgba(124, 0, 128, 0.466);">
+                <div class="row flex-column my-md-3" style="margin-top:20px;">
+                    <div class="col-12"
+                        style="width:80% ; background-color:aqua; border:2px inset silver; color:brown ; font-family: 'Ubuntu', sans-serif; font-size: 13px;">
+                        Python - <span style="font-weight: bold; margin-left:30px ;">80%</span></div>
+                    <div class="col-12"
+                        style="width:70% ; background-color:rgb(0, 139, 139); border:2px inset silver; color:brown ; font-family: 'Ubuntu', sans-serif; font-size: 13px;">
+                        C++ - <span style="font-weight: bold; margin-left:30px ;">70%</span></div>
+                    <div class="col-12"
+                        style="width:70% ; background-color:rgb(255, 196, 0); border:2px inset silver; color:brown ; font-family: 'Ubuntu', sans-serif; font-size: 13px;">
+                        Machine-learning - <span style="font-weight: bold; margin-left:30px ;">70%</span></div>
+                    <div class="col-12"
+                        style="width:60% ; background-color:rgb(0, 195, 255); border:2px inset silver; color:brown ; font-family: 'Ubuntu', sans-serif; font-size: 13px;">
+                        Deep learning- <span style="font-weight: bold; margin-left:30px ;">60%</span></div>
+                    <div class="col-12"
+                        style="width:80% ; background-color:rgba(162, 0, 255, 0.116); border:2px inset silver; color:brown ; font-family: 'Ubuntu', sans-serif; font-size: 13px;">
+                        Power-BI - <span style="font-weight: bold; margin-left:30px ;">80%</span></div>
+                    <div class="col-12"
+                        style="width:40% ; background-color:rgb(0, 255, 179); border:2px inset silver; color:brown ; font-family: 'Ubuntu', sans-serif; font-size: 13px;">
+                        Flask - <span style="font-weight: bold; margin-left:30px ;">40%</span></div>
+                </div>
+            </div>
+            <div class="col-md-5" style="background-color:rgba(195, 205, 50, 0.87)">
+                <div class="row flex-column my-md-3" style="margin-bottom:20px;">
+                    <div class="col-12"
+                        style="width:90% ; background-color:rgb(0, 140, 255); border:2px inset silver; color:brown ; font-family: 'Ubuntu', sans-serif; font-size: 13px;">
+                        HTML - <span style="font-weight: bold; margin-left:30px ;">90%</span></div>
+                    <div class="col-12"
+                        style="width:70% ; background-color:rgb(0, 139, 81); border:2px inset silver; color:brown ; font-family: 'Ubuntu', sans-serif; font-size: 13px;">
+                        Css - <span style="font-weight: bold; margin-left:30px ;">80%</span></div>
+                    <div class="col-12"
+                        style="width:75% ; background-color:rgb(0, 204, 255); border:2px inset silver; color:brown ; font-family: 'Ubuntu', sans-serif; font-size: 13px;">
+                        Java script - <span style="font-weight: bold; margin-left:30px ;">75%</span></div>
+                    <div class="col-12"
+                        style="width:60% ; background-color:rgba(183, 0, 255, 0.452); border:2px inset silver; color:brown ; font-family: 'Ubuntu', sans-serif; font-size: 13px;">
+                        PHP - <span style="font-weight: bold; margin-left:30px ;">60%</span></div>
+                    <div class="col-12"
+                        style="width:70% ; background-color:rgba(162, 0, 255, 0.24); border:2px inset silver; color:brown ; font-family: 'Ubuntu', sans-serif; font-size: 13px;">
+                        Django - <span style="font-weight: bold; margin-left:30px ;">70%</span></div>
+                    <div class="col-12"
+                        style="width:50% ; background-color:rgba(0, 255, 179, 0.397); border:2px inset silver; color:brown ; font-family: 'Ubuntu', sans-serif; font-size: 13px;">
+                        Others - <span style="font-weight: bold; margin-left:30px ;">50%</span></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--ngo-->
+    <div class="container-fluid">
+        <p
+            style="font-family: 'Ubuntu', sans-serif;font-weight: bold; margin-left: 40px; font-size:23px ; margin-top:20px;">
+            My NGO</p>
+
+        <div class="row justify-content-around"
+            style="background-color:rgba(0, 139, 139, 0.349) ;  padding-top: 30px; margin-bottom:20px;">
+            <div class="col-md-4">
+                <div class="row flex-column">
+                    <div class="col ngo"><img style="width: 100%; height:250px;" src="./static/ngo_logo.jpg"
+                            alt="ngo logo"></div>
+                    <div class="col ngo"><img style="width: 100%; height:250px;" src="./static/ngo1.jpg" alt="ngo">
+                    </div>
+                    <div class="col ngo"><img style="width: 100%; height:250px;" src="./static/ngo3.jpg" alt="ngo">
+                    </div>
+                    <div class="col ngo"><img style="width: 100%; height:250px;" src="./static/ngo4.jpg" alt="ngo">
+                    </div>
+                    <div class="col ngo"><img style="width: 100%; height:250px;" src="./static/ngo5.jpg" alt="ngo">
+                    </div>
+                    <div class="col ngo"> <video controls style="width:100% ; height:250px">
+                            <source src="./static/ngo_vid1.mp4" type="video/mp4">
+                        </video></div>
+                    <div class="col ngo"><video controls style="width:100% ; height:250px">
+                            <source src="./static/ngo_vid2.mp4" type="video/mp4">
+                        </video></div>
+                    <div class="col ngo"> <video controls style="width:100% ; height:250px">
+                            <source src="./static/ngo_vid3.mp4" type="video/mp4">
+                        </video></div>
+                    <div class="col" style="text-align:center ; color:blue">
+                        <p> <span style="cursor:poingter ;" onclick="prev()" id="prev"><i
+                                    class="fa-solid fa-angles-left"></i></span> &emsp;&emsp;&emsp; <span
+                                style="cursor:poingter ;" id="next" onclick="next()"> <i
+                                    class="fa-solid fa-angles-right"></i></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" style="background-color:lightsalmon;margin-bottom:40px;">
+                <p style="font-family: 'Ubuntu', sans-serif;font-weight: bold;">&#9677; Youth of Varanasi (team 1999)..
+                </p>
+                <p style="font-family: 'Ubuntu', sans-serif;font-weight: bold; text-align: center;font-size:17px;"> You
+                    Bring The Sunshine To Their Lives</p>
+                <p style="font-family: 'Ubuntu', sans-serif;font-weight: bold;">-Director : SAMEER KHAN and RAJAT</p>
+                <p style="font-family: 'Ubuntu', sans-serif;font-weight: bold; font-size: 15px;;">-Work for : slum
+                    area's children education , health and also we are helping in improving thier living standard.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- about me -->
+    <div class="container-fluid" id="abouteme">
+        <p
+            style="font-family: 'Ubuntu', sans-serif;font-weight: bold; margin-left: 40px; font-size:23px ; margin-top:20px;">
+            About Me</p>
+        <div class="row justify-content-around"
+            style="background-color:rgba(0, 139, 139, 0.349) ;  padding-top: 30px; padding-bottom:20px;">
+            <div class="col-md-4">
+                <img style="width:100%; height:100%;" src="./static/about_image.jpg" alt="">
+            </div>
+            <div class="col-md-6" style="background-color:thistle ;">
+                <p style="font-family: 'Ubuntu', sans-serif;font-weight: bold; text-align: center; font-size: 18px;">
+                    SAMEER KHAN</p>
+                <div class="row">
+                    <div class="col">
+                        <p style="font-family: 'Ubuntu', sans-serif;font-weight: bold;">&#9673;DOB &rarr; 10-jul-2002
+                        </p>
+                    </div>
+                    <div class="col" style="text-align:end;">
+                        <p style="font-family: 'Ubuntu', sans-serif;font-weight: bold;"> &#9673;ADDRESS &rarr; Varanasi,
+                            Uttarprades</p>
+                    </div>
+                </div>
+                <p style="font-family: 'Ubuntu', sans-serif;font-weight: bold; font-size: 13px;"> - I am a talented,
+                    ambitious and hardworking individual, with broad skills in web desining , machine learning , data
+                    visualization , social media and leading projects.</p>
+                <p style="font-family: 'Ubuntu', sans-serif;font-weight: bold; font-size: 13px;"> - A key strength is
+                    communication; building strong relationships with people in order to deliver the best results.</p>
+                <p style="font-family: 'Ubuntu', sans-serif;font-weight: bold; font-size: 13px;"> - Recently, I
+                    completed an Open degree, including Data science and Data visualization at the Open University <u>
+                        International Institute of Information Technology, Bangalore (upgrade).</u></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- my services -->
+    <div class="container-fluid" id="aboutme">
+        <p
+            style="font-family: 'Ubuntu', sans-serif;font-weight: bold; margin-left: 40px; font-size:23px ; margin-top:20px;">
+            My survices</p>
+        <div class="row justify-content-around"
+            style="background-color:rgba(0, 139, 139, 0.349) ;  padding-top: 30px; padding-bottom:20px;">
+            <div class="col-md-3" style="background-color: lightslategray;">
+                <p style="font-family: 'Ubuntu', sans-serif;font-weight: bold; text-align:center;">Web Designing</p>
+                <p style="font-family: 'Ubuntu', sans-serif;font-weight: bold; font-size: 13px;">I im good in full stack
+                    web designing.I have lots of skils in java, html, css, django, and others .</p>
+            </div>
+            <div class="col-md-3" style="background-color: lightslategray;">
+                <p style="font-family: 'Ubuntu', sans-serif;font-weight: bold; text-align:center;">Data Analytics</p>
+                <p style="font-family: 'Ubuntu', sans-serif;font-weight: bold; font-size: 13px;">I im also good in data
+                    visualization and data Analytics. I have lots of skils in matplotlib pandas numpy tensorflow powebi
+                    etc.</p>
+            </div>
+            <div class="col-md-3" style="background-color: lightslategray;">
+                <p style="font-family: 'Ubuntu', sans-serif;font-weight: bold; text-align:center;">Data Science</p>
+                <p style="font-family: 'Ubuntu', sans-serif;font-weight: bold; font-size: 13px;">I im also good in data
+                    science.I have lots of skils in python matplotlib pandas numpy tensorflow flask etc.</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- contact me -->
+    <div class="container-fluid" id="contactme">
+        <p style="font-family: 'Ubuntu', sans-serif;font-weight: bold; margin-left: 40px; font-size:23px ; margin-top:20px;">
+            Contact Me</p>
+        <div class="row justify-content-center" style="background-color:rgba(0, 139, 139, 0.349) ;  padding-top: 30px; padding-bottom:20px;">
+            <div class="col-md-3" style="background-color: lightgrey;">
+                <p style="font-family: 'Ubuntu', sans-serif;font-weight: bold; text-align: center; font-size: 18px;">Get in Touch</p>
+                <p style="font-family: 'Ubuntu', sans-serif;font-weight: bold; font-size: 14px;">EMAIL - <span style="font-family: 'Ubuntu', sans-serif;font-weight: bold; font-size: 13px;">sameerkhan2ssk2@gmail.com</span></p>
+                <p style="font-family: 'Ubuntu', sans-serif;font-weight: bold; font-size: 14px;">PHONE - <span style="font-family: 'Ubuntu', sans-serif;font-weight: bold; font-size: 13px;">+919696196395</span></p>
+                <p style="font-family: 'Ubuntu', sans-serif;font-weight: bold; font-size: 14px;">ADDRESS - <span style="font-family: 'Ubuntu', sans-serif;font-weight: bold; font-size: 13px;">Amanpuri colony, sarnath, varanasi pin-221007</span></p>
+                <div class="row">
+                    <div class="col-6" style="text-align: center;">
+                        <p style="font-size:30px;text-align:center; "><a style="color:brown"
+                            href="https://www.instagram.com/itssam.kha/"> <i
+                                class="fa-brands fa-square-instagram"></i></a></p>
+                    </div>
+                    <div class="col-6" style="text-align: center;">
+                        <p style="font-size:30px;text-align:center;"><a style="color:blue"
+                            href="https://www.facebook.com/sameer1ssk1"> <i
+                                class="fa-brands fa-square-facebook"></i></a></p>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-md-5" style="background-color: lightgreen; padding-top: 10px; padding-bottom: 10px;">
+                <p style="font-family: 'Ubuntu', sans-serif;font-weight: bold; font-size: 13px;">Note : After clicking the submit button wait for some time and then click OK on the alert to send the message.</p>
+                <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter name"
+              />
+              <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter email"
+            />
+            <textarea class="form-control" id="message" rows="3" placeholder="Enter subject"></textarea>
+            <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+            </div>
+        </div>
+    </div>
+
+   
+    
+    <div  style="font-family: 'Ubuntu', sans-serif;font-weight: bold; text-align:center; background-color: white;">This portfolio is made with <span style="color: red; font-size: 20px;"> &#9829;</span> by sameer khan</div>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-2  d-md-none d-block">
+                <p style="font-size:30px;text-align:center; "><a style="color:black"
+                    href="https://www.instagram.com/itssam.kha/"> <i
+                        class="fa-brands fa-square-instagram"></i></a></p>
+            </div>
+            <div class="col-2  d-md-none d-block">
+                <p style="font-size:30px;text-align:center;"><a style="color:black"
+                    href="https://github.com/itssameerkhan"> <i class="fa-brands fa-github"></i></a></p>
+            </div>
+            <div class="col-2  d-md-none d-block">
+                <p style="font-size:30px;text-align:center;"><a style="color:black"
+                    href="https://www.facebook.com/sameer1ssk1"> <i
+                        class="fa-brands fa-square-facebook"></i></a></p>
+            </div>
+            <div class="col-2  d-md-none d-block">
+                <p style="font-size:30px;text-align:center;"><a style="color:black"
+                    href="https://www.linkedin.com/in/sameer-khan-514821178/"><i
+                        class="fa-brands fa-linkedin"></i></a> </p>
+            </div>
+        </div>
+    </div>
+    </div> 
+
+
+    <script src="static/java_file.js">
+    </script>
+
+</body>
+
+</html>
